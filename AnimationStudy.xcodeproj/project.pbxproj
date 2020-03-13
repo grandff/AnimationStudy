@@ -13,6 +13,11 @@
 		1BA5DA50241B6E7F00065C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA4E241B6E7F00065C42 /* Main.storyboard */; };
 		1BA5DA52241B6E8200065C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA51241B6E8200065C42 /* Assets.xcassets */; };
 		1BA5DA55241B6E8200065C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA53241B6E8200065C42 /* LaunchScreen.storyboard */; };
+		1BA5DA5E241B702A00065C42 /* SimpleUIViewAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA5D241B702A00065C42 /* SimpleUIViewAnimation.storyboard */; };
+		1BA5DA60241B703500065C42 /* AnimationOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA5F241B703500065C42 /* AnimationOptions.storyboard */; };
+		1BA5DA62241B704900065C42 /* UIViewSpringAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */; };
+		1BA5DA64241B707200065C42 /* UIViewKeyframeAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */; };
+		1BA5DA66241B707D00065C42 /* AutoLayoutAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1BA5DA51241B6E8200065C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA5DA54241B6E8200065C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA5DA56241B6E8200065C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA5DA5D241B702A00065C42 /* SimpleUIViewAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleUIViewAnimation.storyboard; sourceTree = "<group>"; };
+		1BA5DA5F241B703500065C42 /* AnimationOptions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationOptions.storyboard; sourceTree = "<group>"; };
+		1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewSpringAnimation.storyboard; sourceTree = "<group>"; };
+		1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewKeyframeAnimation.storyboard; sourceTree = "<group>"; };
+		1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutAnimation.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		1BA5DA47241B6E7F00065C42 /* AnimationStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BA5DA5C241B6E9200065C42 /* UIViewAnimation */,
 				1BA5DA48241B6E7F00065C42 /* AppDelegate.swift */,
 				1BA5DA4A241B6E7F00065C42 /* SceneDelegate.swift */,
 				1BA5DA4C241B6E7F00065C42 /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				1BA5DA56241B6E8200065C42 /* Info.plist */,
 			);
 			path = AnimationStudy;
+			sourceTree = "<group>";
+		};
+		1BA5DA5C241B6E9200065C42 /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5DA5D241B702A00065C42 /* SimpleUIViewAnimation.storyboard */,
+				1BA5DA5F241B703500065C42 /* AnimationOptions.storyboard */,
+				1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */,
+				1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */,
+				1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */,
+			);
+			path = UIViewAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA5DA5E241B702A00065C42 /* SimpleUIViewAnimation.storyboard in Resources */,
 				1BA5DA55241B6E8200065C42 /* LaunchScreen.storyboard in Resources */,
+				1BA5DA64241B707200065C42 /* UIViewKeyframeAnimation.storyboard in Resources */,
 				1BA5DA52241B6E8200065C42 /* Assets.xcassets in Resources */,
+				1BA5DA66241B707D00065C42 /* AutoLayoutAnimation.storyboard in Resources */,
 				1BA5DA50241B6E7F00065C42 /* Main.storyboard in Resources */,
+				1BA5DA62241B704900065C42 /* UIViewSpringAnimation.storyboard in Resources */,
+				1BA5DA60241B703500065C42 /* AnimationOptions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
