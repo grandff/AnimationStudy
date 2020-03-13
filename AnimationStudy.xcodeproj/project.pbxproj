@@ -18,6 +18,8 @@
 		1BA5DA62241B704900065C42 /* UIViewSpringAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */; };
 		1BA5DA64241B707200065C42 /* UIViewKeyframeAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */; };
 		1BA5DA66241B707D00065C42 /* AutoLayoutAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */; };
+		1BA5DA68241B743300065C42 /* SimpleUIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA67241B743300065C42 /* SimpleUIViewAnimationViewController.swift */; };
+		1BA5DA6A241B771500065C42 /* AnimationOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA69241B771500065C42 /* AnimationOptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewSpringAnimation.storyboard; sourceTree = "<group>"; };
 		1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewKeyframeAnimation.storyboard; sourceTree = "<group>"; };
 		1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutAnimation.storyboard; sourceTree = "<group>"; };
+		1BA5DA67241B743300065C42 /* SimpleUIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewAnimationViewController.swift; sourceTree = "<group>"; };
+		1BA5DA69241B771500065C42 /* AnimationOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				1BA5DA61241B704900065C42 /* UIViewSpringAnimation.storyboard */,
 				1BA5DA63241B707200065C42 /* UIViewKeyframeAnimation.storyboard */,
 				1BA5DA65241B707D00065C42 /* AutoLayoutAnimation.storyboard */,
+				1BA5DA67241B743300065C42 /* SimpleUIViewAnimationViewController.swift */,
+				1BA5DA69241B771500065C42 /* AnimationOptionsViewController.swift */,
 			);
 			path = UIViewAnimation;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 			files = (
 				1BA5DA4D241B6E7F00065C42 /* ViewController.swift in Sources */,
 				1BA5DA49241B6E7F00065C42 /* AppDelegate.swift in Sources */,
+				1BA5DA68241B743300065C42 /* SimpleUIViewAnimationViewController.swift in Sources */,
+				1BA5DA6A241B771500065C42 /* AnimationOptionsViewController.swift in Sources */,
 				1BA5DA4B241B6E7F00065C42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
