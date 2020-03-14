@@ -7,20 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Auto Layout Animation View Controller-->
         <scene sceneID="Jhg-gx-W9B">
             <objects>
-                <viewController id="wah-vp-EGG" sceneMemberID="viewController">
+                <viewController id="wah-vp-EGG" customClass="AutoLayoutAnimationViewController" customModule="AnimationStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e94-k4-xXD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Yc-qaC">
+                                <rect key="frame" x="141" y="384" width="132" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Snt-kU-gWX"/>
+                                    <constraint firstAttribute="height" constant="128" id="ybJ-Sf-rxs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ccR-Yc-qaC" firstAttribute="centerY" secondItem="e94-k4-xXD" secondAttribute="centerY" id="BHm-UH-VgW"/>
+                            <constraint firstItem="ccR-Yc-qaC" firstAttribute="centerX" secondItem="e94-k4-xXD" secondAttribute="centerX" id="bo2-z4-PNk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dAD-HA-xU9"/>
                     </view>
+                    <connections>
+                        <outlet property="heightConstraint" destination="ybJ-Sf-rxs" id="m2m-LK-RDF"/>
+                        <outlet property="redView" destination="ccR-Yc-qaC" id="YOI-FP-M1F"/>
+                        <outlet property="widthConstraint" destination="Snt-kU-gWX" id="kwa-Nz-zGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSJ-Ge-e1n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="59"/>
+            <point key="canvasLocation" x="100.00000000000001" y="58.928571428571423"/>
         </scene>
     </scenes>
 </document>

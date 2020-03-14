@@ -7,20 +7,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Sprint Animation View Controller-->
         <scene sceneID="PUC-xb-vsb">
             <objects>
-                <viewController id="sPp-dl-oPL" sceneMemberID="viewController">
+                <viewController id="sPp-dl-oPL" customClass="UIViewSprintAnimationViewController" customModule="AnimationStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mkb-vr-V7F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM2-KZ-b43">
+                                <rect key="frame" x="20" y="100" width="142" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-RS-hHq">
+                                        <rect key="frame" x="8" y="8" width="126" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="reset:" destination="sPp-dl-oPL" eventType="touchUpInside" id="B7d-g2-ftl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="9tf-jT-yxx">
+                                <rect key="frame" x="20" y="627" width="376" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWG-AA-ebN">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-eC-1XM">
+                                        <rect key="frame" x="-2" y="54.5" width="380" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-hO-y6W">
+                                        <rect key="frame" x="0.0" y="118.5" width="61" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-ez-d0B">
+                                        <rect key="frame" x="-2" y="173" width="380" height="31"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9tf-jT-yxx" firstAttribute="top" secondItem="UM2-KZ-b43" secondAttribute="bottom" constant="399" id="5BV-le-k7X"/>
+                            <constraint firstItem="9tf-jT-yxx" firstAttribute="leading" secondItem="ypk-qg-gry" secondAttribute="leading" constant="20" id="ApG-Nt-5GA"/>
+                            <constraint firstItem="UM2-KZ-b43" firstAttribute="leading" secondItem="ypk-qg-gry" secondAttribute="leading" constant="20" id="D65-fb-KpN"/>
+                            <constraint firstItem="ypk-qg-gry" firstAttribute="trailing" secondItem="9tf-jT-yxx" secondAttribute="trailing" constant="18" id="WOB-QR-Eff"/>
+                            <constraint firstItem="ypk-qg-gry" firstAttribute="bottom" secondItem="9tf-jT-yxx" secondAttribute="bottom" constant="32" id="cTC-yR-Njz"/>
+                            <constraint firstItem="ypk-qg-gry" firstAttribute="trailing" secondItem="UM2-KZ-b43" secondAttribute="trailing" constant="252" id="nf1-fN-S59"/>
+                            <constraint firstItem="UM2-KZ-b43" firstAttribute="top" secondItem="ypk-qg-gry" secondAttribute="top" constant="56" id="w9y-8Y-IQx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ypk-qg-gry"/>
                     </view>
+                    <connections>
+                        <outlet property="dampingSlider" destination="isQ-eC-1XM" id="1xH-y1-8U5"/>
+                        <outlet property="redView" destination="UM2-KZ-b43" id="AJi-fn-9U2"/>
+                        <outlet property="velocitySlider" destination="Rek-ez-d0B" id="sH0-HO-IsC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2O-9l-NJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="73"/>
+            <point key="canvasLocation" x="111.59420289855073" y="72.991071428571431"/>
         </scene>
     </scenes>
 </document>
