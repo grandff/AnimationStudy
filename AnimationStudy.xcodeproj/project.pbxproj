@@ -27,6 +27,8 @@
 		1BA5DA75241CD7BF00065C42 /* InteractiveAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA74241CD7BF00065C42 /* InteractiveAnimation.storyboard */; };
 		1BA5DA77241CDA5700065C42 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA76241CDA5700065C42 /* PropertyAnimatorViewController.swift */; };
 		1BA5DA79241CDA7300065C42 /* InteractiveAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA78241CDA7300065C42 /* InteractiveAnimationViewController.swift */; };
+		1BF83AF2241DE55F00E9401F /* MotionEffect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF83AF1241DE55F00E9401F /* MotionEffect.storyboard */; };
+		1BF83AF4241DE57800E9401F /* MotionEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83AF3241DE57800E9401F /* MotionEffectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		1BA5DA74241CD7BF00065C42 /* InteractiveAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InteractiveAnimation.storyboard; sourceTree = "<group>"; };
 		1BA5DA76241CDA5700065C42 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
 		1BA5DA78241CDA7300065C42 /* InteractiveAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveAnimationViewController.swift; sourceTree = "<group>"; };
+		1BF83AF1241DE55F00E9401F /* MotionEffect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MotionEffect.storyboard; sourceTree = "<group>"; };
+		1BF83AF3241DE57800E9401F /* MotionEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		1BA5DA47241B6E7F00065C42 /* AnimationStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BF83AF0241DE54600E9401F /* MotionEffect */,
 				1BA5DA71241CD6C700065C42 /* PropertyAnimator */,
 				1BA5DA5C241B6E9200065C42 /* UIViewAnimation */,
 				1BA5DA48241B6E7F00065C42 /* AppDelegate.swift */,
@@ -123,6 +128,15 @@
 				1BA5DA78241CDA7300065C42 /* InteractiveAnimationViewController.swift */,
 			);
 			path = PropertyAnimator;
+			sourceTree = "<group>";
+		};
+		1BF83AF0241DE54600E9401F /* MotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				1BF83AF1241DE55F00E9401F /* MotionEffect.storyboard */,
+				1BF83AF3241DE57800E9401F /* MotionEffectViewController.swift */,
+			);
+			path = MotionEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,7 @@
 				1BA5DA5E241B702A00065C42 /* SimpleUIViewAnimation.storyboard in Resources */,
 				1BA5DA55241B6E8200065C42 /* LaunchScreen.storyboard in Resources */,
 				1BA5DA64241B707200065C42 /* UIViewKeyframeAnimation.storyboard in Resources */,
+				1BF83AF2241DE55F00E9401F /* MotionEffect.storyboard in Resources */,
 				1BA5DA52241B6E8200065C42 /* Assets.xcassets in Resources */,
 				1BA5DA75241CD7BF00065C42 /* InteractiveAnimation.storyboard in Resources */,
 				1BA5DA73241CD79B00065C42 /* PropertyAnimator.storyboard in Resources */,
@@ -205,6 +220,7 @@
 			files = (
 				1BA5DA70241CD58300065C42 /* AutoLayoutAnimationViewController.swift in Sources */,
 				1BA5DA6C241CD1F200065C42 /* UIViewSprintAnimationViewController.swift in Sources */,
+				1BF83AF4241DE57800E9401F /* MotionEffectViewController.swift in Sources */,
 				1BA5DA6E241CD41000065C42 /* UIViewKeyframeAnimationViewController.swift in Sources */,
 				1BA5DA4D241B6E7F00065C42 /* ViewController.swift in Sources */,
 				1BA5DA49241B6E7F00065C42 /* AppDelegate.swift in Sources */,

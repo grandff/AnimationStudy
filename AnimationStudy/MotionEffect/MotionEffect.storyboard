@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mRw-eP-iHj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Motion Effect-->
+        <scene sceneID="ja9-je-hm3">
+            <objects>
+                <viewController title="Motion Effect" id="mRw-eP-iHj" customClass="MotionEffectViewController" customModule="AnimationStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dM3-Ba-D6V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big" translatesAutoresizingMaskIntoConstraints="NO" id="EVB-HO-oTz">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Ehe-W3-tF3"/>
+                                    <constraint firstAttribute="width" constant="256" id="ioj-bo-llj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small" translatesAutoresizingMaskIntoConstraints="NO" id="RE3-Yl-ZQr">
+                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="G92-9d-bnJ"/>
+                                    <constraint firstAttribute="width" constant="128" id="uFN-9I-fls"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EVB-HO-oTz" firstAttribute="centerY" secondItem="dM3-Ba-D6V" secondAttribute="centerY" id="3eR-Cz-76c"/>
+                            <constraint firstItem="RE3-Yl-ZQr" firstAttribute="centerY" secondItem="dM3-Ba-D6V" secondAttribute="centerY" id="Y9l-DT-qVW"/>
+                            <constraint firstItem="RE3-Yl-ZQr" firstAttribute="centerX" secondItem="dM3-Ba-D6V" secondAttribute="centerX" id="a6T-Iz-4Hq"/>
+                            <constraint firstItem="EVB-HO-oTz" firstAttribute="centerX" secondItem="dM3-Ba-D6V" secondAttribute="centerX" id="zxl-2p-1gw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xqi-Ai-76F"/>
+                    </view>
+                    <connections>
+                        <outlet property="targetImageView" destination="RE3-Yl-ZQr" id="c9g-9U-AEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43g-1M-8uP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="big" width="256" height="256"/>
+        <image name="small" width="128" height="128"/>
+    </resources>
+</document>
